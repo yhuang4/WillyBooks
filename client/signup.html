@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <title>WillyBooks</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="icon.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.4.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.4.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.4.1/firebase-firestore.js"></script>
+    <script src="js/firebase.js"></script>
+    <script src="js/main.js"></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-light">
+        <a class="navbar-brand" href="index.html">WillyBooks</a>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="search.html">Buy</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="sell.html">Sell</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="account.html" id="my-account" hidden>My Account</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="login.html" id="login-n-out"></a>
+            </li>
+        </ul>
+
+    </nav>
+
+    <h3 class="w-50 mx-auto mt-5 mb-3">Sign Up</h3>
+    <p class="w-50 mx-auto mb-3" id="disclaimer">(You only need an account if you're SELLING)</p>
+    <form id="signup">
+        <div class="form-group w-50 m-auto">
+            <label for="name">Name: (Please enter your real name)</label>
+            <input type="text" class="form-control" id="name" required>
+        </div>
+
+        <div class="form-group w-50 m-auto">
+                <label for="email">Email: </label>
+                <div class="row">
+                  <div class="col pr-2">
+                        <input type="text" class="form-control" id="email" required>
+                  </div>
+                  <div class="col pl-0">
+                    <p class="mt-1 mb-0">@williston.com</p>
+                  </div>
+                </div>
+        </div>
+
+        <!-- Original email input -->
+        <!-- <div class="form-group w-50 m-auto">
+            <label for="email">Email: (Please use your Williston email)</label>
+            <input pattern="^.*@williston\.com$" type="email" class="form-control" id="email" required> -->
+            <!-- pattern="^.*@williston\.com$" -->
+        <!-- </div> -->
+
+        <div class="form-group w-50 m-auto">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control" id="pwd" required>
+        </div>
+
+        <div class="form-group w-50 m-auto">
+            <label for="reenter-pwd">Re-enter Password:</label>
+            <input type="password" class="form-control" id="reenter-pwd" required>
+        </div>
+
+        <div class="form-group w-50 m-auto">
+            <label for="number">Phone number for contact: (optional)</label>
+            <input type="text" class="form-control" id="number">
+            <input type="submit" class="my-3 btn btn-primary bg-wb" value="Sign Up">
+        </div>
+    </form>
+
+
+</body>
+
+</html>

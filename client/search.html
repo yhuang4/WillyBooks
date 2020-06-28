@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <title>WillyBooks</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="icon.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script> -->
+    <script src="https://www.gstatic.com/firebasejs/6.4.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.4.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.4.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.4.0/firebase-storage.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/firebase.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/search-isbn.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-light">
+        <a class="navbar-brand" href="index.html">WillyBooks</a>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="search.html">Buy</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="sell.html">Sell</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                        <a class="nav-link" href="account.html" id="my-account" hidden>My Account</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html" id="login-n-out"></a>
+                    </li>
+        </ul>
+
+    </nav>
+
+    <div class="card mx-5 my-5">
+        <div class="card-header">Search by ISBN</div>
+        <div class="card-body">
+            <form id="isbn-form">
+                <div class="form-group mb-0">
+                    <label for="isbn">ISBN-13: </label>
+                    <input type="text" class="form-control" id="isbn" name="isbn">
+                    <input type="submit" class="my-2 btn btn-primary bg-wb mt-3" value="Search">
+                    <!-- <a href="isbn.html">cliCK here for now</a> -->
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <div class="mx-5">
+        <a href="all-book.html"><h5>View All Books</h5></a>
+    </div>
+
+    <div class="card mx-5 my-5" hidden>
+        <div class="card-header">Search by Course</div>
+        <div class="card-body">
+            <form id="course-form">
+                <div class="form-group">
+                    <label for="course">Course: </label>
+                    <input type="text" class="form-control" id="course" name="course" required>
+                    <input type="submit" class="my-2" value="Search">
+                    <a href="course-selection.html">click here for now</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

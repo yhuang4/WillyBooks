@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <title>WillyBooks</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="icon.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script> -->
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/6.4.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.4.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.4.1/firebase-auth.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/firebase.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <div class="bg-white">
+        <nav class="navbar navbar-expand-sm bg-light">
+            <a class="navbar-brand" href="index.html">WillyBooks</a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="search.html">Buy</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sell.html">Sell</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="account.html" id="my-account" hidden>My Account</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html" id="login-n-out"></a>
+                </li>
+            </ul>
+
+        </nav>
+
+        <div class="jumbotron">
+            <img src="slogan.png" width="1200" class="w-100">
+        </div>
+
+        <div class="card mx-5 my-5">
+            <div class="card-body">
+                <h3>How to Sell</h3>
+                <p>1. Get an account!<br>
+                    2. Click "Sell"<br>
+                    3. Enter all information requested<br>
+                    4. Don't forget to take pictures of your book<br>
+                    5. Decide the price and click "Submit"<br>
+                    6. If someone wants your book, they will contact you, and you guys can meet up and exchange money
+                    and
+                    books<br>
+                    7. After a transaction, go to "My Account" and delete the book so you won't be bothered by future
+                    buyers!
+                </p>
+            </div>
+
+        </div>
+
+        <div class="card mx-5 my-5">
+            <div class="card-body">
+                <h3>How to Buy</h3>
+                <p>1. Click "Buy"<br>
+                    2. Search by ISBN or view all books<br>
+                    3. You'll see books for sale posted by people<br>
+                    4. If you like a book, contact the seller and schedule a meeting where you guys can exchange moeny
+                    and
+                    books
+                </p>
+            </div>
+
+        </div>
+
+        <div class="jumbotron">
+            <div class="mx-5 w-100">
+                <h4  id="disclaimer">DISCLAIMER:</h4>
+                <p>This site is for the use of Williston students and staff for the sole purpose of posting information
+                    about used books. <br>
+                    This site was created as a student project and neither Williston nor the student programmers will profit
+                    in any way from this site.<br>
+                    Textbooks that are currently used are not guaranteed to be used in the future. Also, please be mindful
+                    of different editions of the books.
+                </p>
+                </div>
+        </div>
+
+        <div class="mx-5 my-5">
+            <p>Please email <a href="mailto:yhuang@williston.com">yhuang@williston.com</a> to report issues</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
